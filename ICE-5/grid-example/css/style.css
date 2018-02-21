@@ -1,0 +1,33 @@
+
+.wrapper {
+  display: grid;
+/*   grid-template-columns: 100px 100px 100px; */
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+    background-color: green;
+}
+
+.b{
+    background-color: yellow;
+
+}
+
+.c{
+    background-color: red
+}
+
+.d{
+    background-color: green;
+}
