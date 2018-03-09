@@ -25,12 +25,12 @@
 		nameerrormsg.style.display = "none";
 		addrerrormsg.style.display = "none";
 
-		if( !fullname){
+		if( fullname==""){
 			nameerrormsg.style.display = "block";
 			console.log("Full Name");
 			isValid = false;				
 		}
-		if( !streetaddr){
+		if( streetaddr==""){
 			addrerrormsg.style.display = "block";
 			console.log("Address");
 			isValid = false;
