@@ -1,9 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Employment Application Form</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	 	<link href="css/bootstrap-form-helpers.min.css" rel="stylesheet">
+	 	<link href="myStyle.css" rel="stylesheet">   
+	 	<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
 	</head>
 
 	<body>
@@ -11,23 +14,25 @@
 		<form name="application" action="" method="post">
 
 
-	  <h4><u>Basic Information</u></h4>
+      <h4><u>Basic Information</u></h4>
    <div>
 	</a>
 
-		<!-- Content -->
-		<fieldset>
+      	<!-- Content -->
+        <fieldset>
 			<legend>Account Information:</legend>
-			<label> First name:<input type="text" name="fname"   autofocus>
-			</label><br>
+			<ol>
+			<li><label> First name:<input type="text" name="fname" required autofocus>
+			</label></li><br>
 
-			<label for="lname"> Last name:</label><input type="text" name="lname"><br>
+		  	<li><label for="lname"> Last name:</label><input type="text" name="lname"></li><br>
 
-			<label> Email: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
+		  	<li><label> Email: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label></li><br>
 
-			<label> Password: <input type="password"   name="password1"></label><br>
+		  	<li><label> Password: <input type="password"   name="password1"></label></li><br>
 
-			<label> Confirm Password: *<input type="password"   name="password2" onchange="validatePass(this)"></label><br>
+		  	<li><label> Confirm Password: *<input type="password"   name="password2" onchange="validatePass(this)"></label></li><br>
+		  </ol>
 		</fieldset><br>
 
 		<fieldset>
@@ -41,13 +46,13 @@
 		<label> State: <input type="text" name="state"  placeholder = "MI"></label>
 		<label> Zip code: <input type="text" name="Zip code"  placeholder = "48108"></label><br>  
 		</fieldset><br>
-	  </div>
-	
+      </div>
+    
 
 	<div>
 
-	  <h4><u>Education and Work Experience</u></h4>
-		<fieldset> 
+      <h4><u>Education and Work Experience</u></h4>
+        <fieldset> 
 		  <legend>Educational Information:</legend>
 		  
 		  <div id="education">
@@ -88,14 +93,14 @@
 			</fieldset>
 			<br>
 
-	  </div>
-	
-	  <div>
-	  <h4><u>Position</u></h4>
+      </div>
+    
+      <div>
+      <h4><u>Position</u></h4>
    
 
-	
-		<fieldset>
+    
+        <fieldset>
 			<legend>Type of Work:</legend>
 			What are you interested in applying for:<br>
 				<label><input type="checkbox" name="position" value="internship"> Internship</label><br>
@@ -157,18 +162,18 @@
 			
 			</fieldset>
 			<br>
-	  </div>
+      </div>
    
 	<input type="submit" value = "Apply">
 
 	</form>
 
 	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-formhelpers.min.js"></script>
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.min.js"></script>
 	
 	</body>
 </html>
