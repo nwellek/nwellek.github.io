@@ -1,0 +1,85 @@
+*/
+body{
+	font-family:'Lato', sans-serif;
+	font-size:16px
+}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	text-align:center;
+	z-index:10;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+99 */
+background: #1e5799; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+background: -o-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+background: linear-gradient(to bottom right, #1e5799 0%, #2989d8 50%, #7db9e8 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+header ul{
+    display:inline-block;
+    background:#fff;
+    text-align:center;
+    padding:10px;
+    margin:0;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    list-style-type: none;
+}
+header ul li {
+	float:left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav .currentPage {
+	text-decoration: underline;
+	color: red;
+}
+
+footer {
+	background-color: grey;
+}
+
+footer div p{
+	font-size: 20px;
+}
+
+footer div ul{
+	list-style-type: none;
+	font-size: 20px;
+	display:inline-block;
+}
+
+footer div ul li{
+	float:left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+section{
+	min-height: 100vh;
+	min-width: 100vw;
+	border-bottom: 10px black solid;
+}
+
+#name_header {
+	background:url(../images/lead-bg.jpg);
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#image_overlay {
+	position:absolute;
+	height:100%;
+	width:100%;top:0;right:0;bottom:0;left:0;background:rgba(200,200,200,0.8);z-index:1
+}
+
+#lead-content h1 {
+position:absolute;z-index:10;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center
+}
