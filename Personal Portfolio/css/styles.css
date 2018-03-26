@@ -1,10 +1,17 @@
 */
 body{
 	font-family:'Lato', sans-serif;
-	font-size:16px
+	font-size:16px;
 	padding-top: 100px;
 }
 
+p {
+	font-size: 1.5em;
+}
+
+li {
+	font-size: 1.3em;
+}
 
 header{
 	position:fixed;
@@ -53,7 +60,7 @@ footer {
 
 footer div p{
 	padding-top: 50px;
-	font-size: 25px;
+	font-size: 1.5em;
 
 }
 
@@ -63,7 +70,7 @@ h1{
 
 footer div ul{
 	list-style-type: none;
-	font-size: 50px;
+	font-size: 5em;
 	display:inline-block;
 }
 
@@ -72,17 +79,20 @@ footer div ul li{
 	float:left;
 	margin-left: 15px;
 	margin-right: 10px;
-	size: 25px;
+	font-size: 1em;
 }
 
 footer div ul li:hover { 
     color: black;
 }
 
-section{
+section, .one_page {
 	min-height: 100vh;
 	min-width: 100vw;
 	border-bottom: 10px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -104,37 +114,85 @@ section{
 position:absolute;z-index:10;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center
 }
 
-section #about{
+#about{
 	background-color: LightSkyBlue  ;
 	background-height: 100%;
 }	
 
-section #experience{
+#experience{
 	background-color: LightGray   ;
 	background-height: 100%;
 }
 
-section #education{
+#education{
 	background-color: LightSkyBlue  ;
 	background-height: 100%;
 }
 
-section #peojects{
+#projects{
 	background-color: LightGray   ;
 	background-height: 100%;
 }	
 
-section #skills{
-	background-color: LightSkyBlue  ;
+ #skills{
+	background-color: LightSkyBlue ;
 	background-height: 100%;
 }
 
-section #interest{
+#interest{
 	background-color: LightGray   ;
 	background-height: 100%;
+	display: inline-block;
 }
 
-section #contact{
+#contact{
 	background-color: LightSkyBlue  ;
 	background-height: 100%;
+}
+
+#interest img{
+	height: 150px;
+	width: auto;
+	padding-top: 15px;	
+}
+
+#interest .imagerow{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 5em;
+	margin-top: 0;
+}
+
+#skills ul{
+	display:inline-block;
+	list-style-type: none;
+
+
+}	
+#skills ul li{
+	float: left;
+	padding-right: 3px;
+	padding-left: 3px;
+	border-left: 3px solid black;
+	font-size: 2em;
+
+}
+
+@media only screen and (max-width: 620px){
+	header ul {
+		display: block;
+		float: none;
+	}
+	header ul li { 
+		float: none;
+		border-top: 1px solid black;
+	}
 }
