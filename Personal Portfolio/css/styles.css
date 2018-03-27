@@ -1,198 +1,223 @@
 */
-body{
-	font-family:'Lato', sans-serif;
-	font-size:16px;
-	padding-top: 100px;
+ body{
+	 font-family:'Lato', sans-serif;
+	 font-size:16px;
+	 padding-top: 100px;
+	 overflow-x:hidden;
 }
-
-p {
-	font-size: 1.5em;
+ p {
+	 font-size: 1.5em;
 }
-
-li {
-	font-size: 1.3em;
+ li {
+	 font-size: 1.3em;
 }
-
-header{
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	text-align:center;
-	z-index:10;
+ header{
+	 position:fixed;
+	 top:0;
+	 left:0;
+	 right:0;
+	 text-align:center;
+	 z-index:11;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+99 */
-	background: #1e5799; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-    background-image: background-image: background: -webkit-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
-    background-image: background-image: background: -o-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
-    background-image: background-image: background: linear-gradient(to bottom right, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
-    background: -o-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
-    background: linear-gradient(to bottom right, #1e5799 0%, #2989d8 50%, #7db9e8 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	 background: #1e5799;
+	/* Old browsers */
+	/* FF3.6-15 */
+	/* Chrome10-25,Safari5.1-6 */
+	 background-image: background-image: background: -webkit-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+	 background-image: background-image: background: -o-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+	 background-image: background-image: background: linear-gradient(to bottom right, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+	 background: -o-linear-gradient(top left, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+	 background: linear-gradient(to bottom right, #1e5799 0%, #2989d8 50%, #7db9e8 99%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+	/* IE6-9 fallback on horizontal gradient */
 }
-
-header ul{
-	display:inline-block;
-	background:#fff;
-	text-align:center;
-	padding:10px;
-	margin:0;
-	border-bottom-right-radius:6px;
-	border-bottom-left-radius:6px;
-	border-top-left-radius:6px;
-	border-top-right-radius:6px;
-	list-style-type: none;
+ header ul{
+	 display:inline-block;
+	 background:#fff;
+	 text-align:center;
+	 padding:10px;
+	 margin:0;
+	 border-bottom-right-radius:6px;
+	 border-bottom-left-radius:6px;
+	 border-top-left-radius:6px;
+	 border-top-right-radius:6px;
+	 list-style-type: none;
 }
-header ul li {
-	float:left;
-	margin-left: 10px;
-	margin-right: 10px;
+ header ul li {
+	 float:left;
+	 margin-left: 10px;
+	 margin-right: 10px;
 }
-
-nav .currentPage {
-	text-decoration: underline;
-	color: red;
+.currentPage {
+	 text-decoration: underline;
+	 color: red;
 }
-
-footer {
-	background-color: grey;
-	height: 25vh;
+ footer {
+	 background-color: grey;
+	 height: 25vh;
 }
-
-footer div p{
-	padding-top: 50px;
-	font-size: 1.5em;
+ footer div p{
+	 padding-top: 50px;
+	 font-size: 1.5em;
+}
+ h1{
+	 font-size: 5em;
+}
+ footer div ul{
+	 list-style-type: none;
+	 font-size: 5em;
+	 display:inline-block;
+}
+ footer div ul li{
+	 float:left;
+	 margin-left: 15px;
+	 margin-right: 10px;
+	 font-size: 1em;
+}
+ footer div ul li:hover {
+	 color: black;
+}
+ section, .one_page {
+	 min-height: 100vh;
+	 min-width: 100vw;
+	 border-bottom: 10px black solid;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ #name_header {
+	 background:url(../images/lead-bg.jpg);
+	 background-size:cover;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 position:relative;
 
 }
-
-h1{
-	font-size: 5em;
-}
-
-footer div ul{
-	list-style-type: none;
-	font-size: 5em;
-	display:inline-block;
-}
-
-
-footer div ul li{
-	float:left;
-	margin-left: 15px;
-	margin-right: 10px;
-	font-size: 1em;
-}
-
-footer div ul li:hover { 
-    color: black;
-}
-
-section, .one_page {
-	min-height: 100vh;
-	min-width: 100vw;
-	border-bottom: 10px black solid;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-#name_header {
-	background:url(../images/lead-bg.jpg);
-	background-size:cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#image_overlay {
+ #image_overlay {
 	position:absolute;
 	height:100%;
-	width:100%;top:0;right:0;bottom:0;left:0;background:rgba(200,200,200,0.8);z-index:1
+	width:100%;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0;
+	background:rgba(200,200,200,0.8);
+	z-index:1 
 }
-
-#lead-content h1 {
-position:absolute;z-index:10;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center
+ #lead-content h1 {
+	 position:absolute;
+	z-index:10;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	text-align:center 
 }
-
-#about{
-	background-color: LightSkyBlue  ;
-	background-height: 100%;
-}	
-
-#experience{
-	background-color: LightGray   ;
-	background-height: 100%;
+ #about{
+	 background-color: LightSkyBlue ;
+	 background-height: 100%;
 }
-
-#education{
-	background-color: LightSkyBlue  ;
-	background-height: 100%;
+ #experience{
+	 background-color: LightGray ;
+	 background-height: 100%;
 }
-
-#projects{
-	background-color: LightGray   ;
-	background-height: 100%;
-}	
-
+ #education{
+	 background-color: LightSkyBlue ;
+	 background-height: 100%;
+}
+ #projects{
+	 background-color: LightGray ;
+	 background-height: 100%;
+}
  #skills{
-	background-color: LightSkyBlue ;
-	background-height: 100%;
+	 background-color: LightSkyBlue ;
+	 background-height: 100%;
 }
-
-#interest{
-	background-color: LightGray   ;
-	background-height: 100%;
-	display: inline-block;
+ #interest{
+	 background-color: LightGray ;
+	 background-height: 100%;
+	 display: inline-block;
 }
-
-#contact{
-	background-color: LightSkyBlue  ;
-	background-height: 100%;
+ #contact{
+	 background-color: LightSkyBlue ;
+	 background-height: 100%;
 }
-
-#interest img{
-	height: 150px;
-	width: auto;
-	padding-top: 15px;	
+ #interest img{
+	 height: 150px;
+	 width: auto;
+	 padding-top: 15px;
 }
-
-#interest .imagerow{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+ #interest .imagerow{
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
 }
-
-
-h2 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 5em;
-	margin-top: 0;
+ h2 {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 font-size: 5em;
+	 margin-top: 0;
 }
-
-#skills ul{
-	display:inline-block;
-	list-style-type: none;
-
-
-}	
-#skills ul li{
-	float: left;
-	padding-right: 3px;
-	padding-left: 3px;
-	border-left: 3px solid black;
-	font-size: 2em;
-
+ #skills ul{
+	 display:inline-block;
+	 list-style-type: none;
 }
-
-@media only screen and (max-width: 620px){
-	header ul {
-		display: block;
-		float: none;
+ #skills ul li{
+	 float: left;
+	 padding-right: 3px;
+	 padding-left: 3px;
+	 border-left: 3px solid black;
+	 font-size: 2em;
+}
+ @media only screen and (max-width: 620px){
+	 header ul {
+		 display: block;
+		 float: none;
 	}
-	header ul li { 
-		float: none;
-		border-top: 1px solid black;
+	 header ul li {
+		 float: none;
+		 border-top: 1px solid black;
 	}
+}
+
+#contact {
+	min-height: 50vh;
+}
+.heading{
+	padding-top: 75px;
+}
+.norightmargin {
+	margin-right: 0px !important;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
+  color: #333;
+  background: #419be0;
+}
+
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+  background: white;
+}
+
+.carouselImage {
+	max-height: 50vh;
+	width:auto;
+}
+.slicked-initialized, .slick-active {
+	display: flex !important;
+	align-items:center;
+	justify-content:center;
+}
+.slick-slide {
+	background: none;
+}
+.container {
+	background: none;
 }
