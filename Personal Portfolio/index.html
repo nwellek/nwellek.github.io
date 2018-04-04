@@ -16,10 +16,26 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 		<script>
 			$( document ).ready(function() {
-			
+
+			// Validate form
+			$('.contact').on('submit', function(e) { 
+		        e.preventDefault(); 
+		        console.log(e);
+		        alert("Your contact info. would be submitted if backend was running.")
+		    });
+
+
+			// Set up carousel
 			$(".carousel").slick({
 			prevArrow : null,
-			nextArrow : null
+			nextArrow : null,
+			mobileFirst: true,
+			slidestoshow: 1,
+			variableWidth: true,
+			  centerMode: true,
+			//autoplay: true,
+			adaptiveHeight: true,
+  			autoplaySpeed: 1000,
 			});
 
 			
@@ -116,6 +132,7 @@
 	</head>
 	<body>
 		<header>
+			<nav>
 			<ul id="menu" class="shadow">
 				<li>
 					<a href="#about">About</a>
@@ -139,6 +156,7 @@
 					<a href="#contact">Contact</a>
 				</li>
 			</ul>
+		</nav>
 		</header>
 		<!-- End header -->
 		<section class="one_page" id = "name_header">
@@ -249,34 +267,20 @@
 		</section>
 		<!-- End #education -->
 		<section class="one_page" id="projects">
-			<div class="col-md-2 col-md-offset-1">
-				<h2 class="heading">Past Projects</h2>
-			</div>
-			<div class="col-md-8">
+			<h2>Projects</h2>
 				<div class='container'>
 					<div class='carousel'>
 						<div>
+							<div class="imageContainer">
 							<img class="carouselImage"  src="images/projects/DD.png" alt="DD image"/>
+						</div>
 							<h2>DD Project</h2>
 						</div>
 						<div>
 							<img class="carouselImage" src="images/projects/maps.png" alt="maps image"/>
 							<h2>Maps</h2>
 						</div>
-						<div>
-							<h3>3</h3>
-						</div>
-						<div>
-							<h3>4</h3>
-						</div>
-						<div>
-							<h3>5</h3>
-						</div>
-						<div>
-							<h3>6</h3>
-						</div>
-					</div>
-				</div>
+										</div>
 			</div>
 		</section>
 		<!-- End #projects -->
@@ -333,12 +337,13 @@
 		<div id="contact">
 			<h2>Get in Touch</h2>
 			<div id="contact-form">
-				<form method="POST" action="https://formspree.io/email@email.com">
-					<input type="hidden" name="_subject" value="Contact request from personal website" />
-					<input type="email" name="_replyto" placeholder="Your email" required>
-					<textarea name="message" placeholder="Your message" required></textarea>
-					<button type="submit">Send</button>
+				<div>
+				<form method="POST" class="contact">
+					<input class="formEl" type="email" name="replyto" placeholder="Your email" required>
+					<textarea class="formEl"  name="message" placeholder="Your message" required></textarea>
+					<button class="formEl"  type="submit">Send</button>
 				</form>
+			</div>
 			</div>
 			<!-- End #contact-form -->
 		</div>
@@ -346,12 +351,12 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-5 copyright">
+					<div class="col-sm-6 copyright">
 						<p>
 							Copyright &copy; 2018 Nathan Wellek
 						</p>
 					</div>
-					<div class="col-sm-5 social">
+					<div class="col-sm-6 social">
 						<ul>
 							<li>
 								<a href="https://github.com/nwellek" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>

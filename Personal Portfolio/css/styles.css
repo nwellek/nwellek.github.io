@@ -55,7 +55,7 @@
 }
  footer {
 	 background-color: grey;
-	 height: 25vh;
+	 min-height: 25vh;
 }
  footer div p{
 	 padding-top: 50px;
@@ -73,7 +73,6 @@
 	 float:left;
 	 margin-left: 15px;
 	 margin-right: 10px;
-	 font-size: 1em;
 }
  footer div ul li:hover {
 	 color: black;
@@ -207,9 +206,16 @@
 }
 
 .carouselImage {
-	max-height: 50vh;
-	width:auto;
+	width: 75vw;
+	height: auto;
+	margin-left: 10rem;
+	margin-right: 10rem;
 }
+
+.carousel h2 {
+	font-size: 2rem;
+}
+
 .slicked-initialized, .slick-active {
 	display: flex !important;
 	align-items:center;
@@ -220,4 +226,37 @@
 }
 .container {
 	background: none;
+}
+#contact-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+
+.formEl {
+	margin: 2rem;
+	padding: 1rem;
+}
+
+#contact h2{
+	text-align:center
+}
+
+#projects h2 {
+	margin: 0;
+}
+
+#projects .container {
+	padding: 0;
+}
+
+#projects {
+	flex-direction: column;
 }
