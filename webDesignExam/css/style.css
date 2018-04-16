@@ -1,0 +1,39 @@
+header {
+	font-size: 24px; /* Font Size For my Name */
+	position: relative;
+}
+
+body{
+	 background: url('images/sun-pattern.png')
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contain {
+	flex: auto;
+	outline-color: blue; /* Blue Bordering and Size */
+	outline-width: thick;
+	outline-style: solid;
+	max-width: 50%;
+	/*display: inline-block;*/
+	/*margin: auto;*/
+}
+
+div img {
+	border: 5px;
+	padding: 5%;
+	display: block;
+	margin: 15px auto;
+	width: 50%; /* Image Sizing */
+	height: auto;
+}
+
+
+button {
+	display: inline-block;
+	margin: 5px;
+}
